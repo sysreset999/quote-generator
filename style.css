@@ -1,3 +1,8 @@
+ /* Made by: Uday Prakash Gupta */
+ /* github: @sysreset999 */
+ /* website:- https://udayprakashgupta.me */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 *{
     margin: 0;
@@ -11,6 +16,18 @@ body{
     background-size: cover;
 }
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
 haha {
     color: #ffffff;
     font-size: 75px;
@@ -50,7 +67,7 @@ h3{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 35px;
 }
 
 lol{
@@ -68,9 +85,36 @@ credits{
 }
 credits a{
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: #ff4599;
     transition: 350ms;
 }
 credits a:hover{
     color: rgb(109, 223, 255);
+}
+
+/* now make the whole code resonsive for mobiles and tablets */
+@media only screen and (max-width: 600px) {
+    haha{
+        font-size: 60px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    #qt-gen{
+        font-size: 15px;
+    }
+    #qt-area{
+        font-size: 15px;
+    }
+    credits{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1642px) {
+    body{
+        background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(bg.png) no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
 }
